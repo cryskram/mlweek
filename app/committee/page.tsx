@@ -19,12 +19,12 @@ const members = [
   },
   {
     name: "Manjari Joshi",
-    designation: "Secratary",
+    designation: "Secretary",
     image: "/resized/Manjari1.jpg",
   },
   {
     name: "Sanjana Shetty",
-    designation: "Joint Secratary",
+    designation: "Joint Secretary",
     image: "/resized/Sanjana1.jpg",
   },
   {
@@ -41,7 +41,7 @@ const members = [
 const sac = [
   {
     name: "Anushree Shetty",
-    image: "/resized/Anushree.jpg",
+    image: "/resized/Anushree1.jpg",
   },
   {
     name: "Nandan M N",
@@ -72,7 +72,7 @@ const sac = [
 const Team = () => {
   return (
     <div className="p-8">
-      <h2 className="text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
+      <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
         Core Committee
       </h2>{" "}
       <br /> <br /> <br />
@@ -100,7 +100,7 @@ const Team = () => {
         ))}
       </div>
       <br /> <br /> <br />
-      <h2 className="text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
+      <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
         Student Activity Committee Coordinators
       </h2>{" "}
       <br /> <br /> <br />
