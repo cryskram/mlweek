@@ -23,7 +23,7 @@ const Navbar = () => {
             height={200}
           />
         </div>
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none text-2xl">
             {menuOpen ? <IoCloseSharp /> : <GiHamburgerMenu />}
           </button>
@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav
           className={`${
             menuOpen ? "block" : "hidden"
-          } lg:flex flex-col lg:flex-row lg:items-center w-full lg:w-auto`}
+          } md:flex flex-col md:flex-row md:items-center w-full md:w-auto`}
         >
           <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 font-bold w-full md:w-auto">
             <li>

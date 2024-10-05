@@ -7,7 +7,7 @@ const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
 const Contact = () => {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center w-full">
+    <div className="my-10 flex flex-col items-center justify-center w-full">
       <h1
         className={`${font.className} text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue`}
       >
