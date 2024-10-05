@@ -174,12 +174,14 @@ const Events = () => {
           />
           <div className="mt-10 md:mt-0 px-0 md:px-40 flex flex-col items-center justify-center">
             <p className="text-justify">
-              ML Mastery on 16th October 2024 is a hands-on workshop covering
-              the essentials of Machine Learning. Learn about data
-              preprocessing, model building, and evaluation, while diving into
-              topics like hyperparameter tuning and neural networks. With
-              practical exercises and real-world applications, this workshop is
-              perfect for anyone looking to enhance their ML skills!
+              Get ready for Multiverse Mysteries, an exciting pre-event of
+              Machine Learning Week on 8th October 2024! In this unique treasure
+              hunt, teams of 4 will split into pairs: two members solve online
+              machine learning puzzles, while the other two work offline on
+              separate clues. Combine your discoveries to unlock the final
+              mystery and dive deeper into the world of ML. It’s a thrilling
+              challenge that sharpens your skills and pushes your creativity -
+              all while having loads of fun!
             </p>
             <Link
               className="mt-10 text-xl border-mBlue border-2 px-4 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black"
@@ -208,12 +210,13 @@ const Events = () => {
           />
           <div className="mt-10 md:mt-0 px-0 md:px-40 flex flex-col items-center justify-center">
             <p className="text-justify">
-              ML Mastery on 16th October 2024 is a hands-on workshop covering
-              the essentials of Machine Learning. Learn about data
-              preprocessing, model building, and evaluation, while diving into
-              topics like hyperparameter tuning and neural networks. With
-              practical exercises and real-world applications, this workshop is
-              perfect for anyone looking to enhance their ML skills!
+              Join us for Neural Mania, a fun-filled pre-event of Machine
+              Learning Week on 9th October 2024! Participants will compete at
+              various game stations, each offering exciting challenges that test
+              both skill and strategy. You can play at multiple stations,
+              enjoying a mix of fun activities that will keep you on your toes.
+              Get ready for a thrilling experience that combines competition,
+              entertainment and a thrill of machine learning!
             </p>
             <Link
               className="mt-10 text-xl border-mBlue border-2 px-4 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black"
