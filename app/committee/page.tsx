@@ -10,22 +10,22 @@ const members = [
   {
     name: "Tulasikrishna T",
     designation: "Vice Chairperson",
-    image: "/resized/Tk.jpg",
+    image: "/resized/Tk1.jpg",
   },
   {
     name: "M B Prajwal",
     designation: "Treasurer",
-    image: "/resized/Prajwal.jpg",
+    image: "/resized/Prajwal1.jpg",
   },
   {
     name: "Manjari Joshi",
     designation: "Secratary",
-    image: "/resized/Manjari.jpg",
+    image: "/resized/Manjari1.jpg",
   },
   {
     name: "Sanjana Shetty",
     designation: "Joint Secratary",
-    image: "/resized/Sanjana.jpg",
+    image: "/resized/Sanjana1.jpg",
   },
   {
     name: "Aneesh K P",
@@ -35,7 +35,7 @@ const members = [
   {
     name: "Sneha N Shastri",
     designation: "Technical Lead",
-    image: "/resized/Sneha N Shastri.jpeg"
+    image: "/resized/Sneha N Shastri1.jpeg"
   },
   
 ];
@@ -46,11 +46,11 @@ const sac = [
   },
   {
     name: "Nandan M N",
-    image: "/resized/nandan.jpg",
+    image: "/resized/nandan1.jpg",
   },
   {
     name: "Pranati.A.P",
-    image: "/resized/Pranati.A.P.jpg",
+    image: "/resized/Pranati.A.P1.jpg",
   },
   {
     name: "Rishika Nayana Shakthi",
@@ -62,7 +62,7 @@ const sac = [
   },
   {
     name: "Tanisha Prakash",
-    image: "/resized/Tanisha.jpg",
+    image: "/resized/Tanisha1.jpg",
   },
   {
     name: "Vageesh G N",
