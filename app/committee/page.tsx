@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const members = [
   {
     name: "Dheemanth G Athreya",
     designation: "Chairperson",
-    image: "/resized/Dheemanth.jpg", 
+    image: "/resized/Dheemanth.jpg",
   },
   {
     name: "Tulasikrishna T",
@@ -35,14 +35,13 @@ const members = [
   {
     name: "Sneha N Shastri",
     designation: "Technical Lead",
-    image: "/resized/Sneha N Shastri1.jpeg"
+    image: "/resized/Sneha N Shastri1.jpeg",
   },
-  
 ];
 const sac = [
   {
     name: "Anushree Shetty",
-    image: "/resized/Anushree.jpg", 
+    image: "/resized/Anushree.jpg",
   },
   {
     name: "Nandan M N",
@@ -66,65 +65,70 @@ const sac = [
   },
   {
     name: "Vageesh G N",
-    image: "/resized/Vageesh.jpg"
+    image: "/resized/Vageesh.jpg",
   },
-  
 ];
 
 const Team = () => {
   return (
     <div className="p-8">
-    <h2 className="text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
-       Core Committee
-    </h2> <br /> <br /> <br />
-    <div className="flex flex-wrap justify-center gap-6">
-      {members.map((member, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center w-full sm:w-1/2 md:w-1/4 lg:w-1/5 p-4 border rounded-lg shadow-md"
-        >
-          <img
-            src={member.image}
-            alt={member.name}
-            className="w-26 h-26 bg-cover mb-4 bg-transparent"
-            style={{ borderRadius: "10px" }}
-          />
-          <div className="text-center">
-            <h3 className="text-blue-500 font-semibold text-lg mb-1">
-              {member.name}
-            </h3>
-            <p className="text-white">{member.designation}</p>
+      <h2 className="text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
+        Core Committee
+      </h2>{" "}
+      <br /> <br /> <br />
+      <div className="flex flex-wrap justify-center gap-6">
+        {members.map((member, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center w-full sm:w-1/2 md:w-1/4 lg:w-1/5 p-4 border rounded-lg shadow-md"
+          >
+            <Image
+              src={member.image}
+              alt={member.name}
+              width={500}
+              height={500}
+              className="w-26 h-26 bg-cover mb-4 bg-transparent"
+              style={{ borderRadius: "10px" }}
+            />
+            <div className="text-center">
+              <h3 className="text-blue-500 font-semibold text-lg mb-1">
+                {member.name}
+              </h3>
+              <p className="text-white">{member.designation}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-    <br /> <br /> <br />
-    <h2 className="text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
-       Student Activity Committee Coordinators
-    </h2> <br /> <br /> <br />
-    <div className="flex flex-wrap justify-center gap-6">
-      {sac.map((member, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center w-full sm:w-1/2 md:w-1/4 lg:w-1/5 p-4 border rounded-lg shadow-md"
-        >
-          <img
-            src={member.image}
-            alt={member.name}
-            className="w-26 h-26 bg-cover mb-4 bg-transparent"
-            style={{ borderRadius: "10px" }}
-          />
-          <div className="text-center">
-            <h3 className="text-blue-500 font-semibold text-lg mb-1">
-              {member.name}
-            </h3>
-            {/* <p className="text-white">{member.designation}</p> */}
+        ))}
+      </div>
+      <br /> <br /> <br />
+      <h2 className="text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
+        Student Activity Committee Coordinators
+      </h2>{" "}
+      <br /> <br /> <br />
+      <div className="flex flex-wrap justify-center gap-6">
+        {sac.map((member, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center w-full sm:w-1/2 md:w-1/4 lg:w-1/5 p-4 border rounded-lg shadow-md"
+          >
+            <Image
+              src={member.image}
+              alt={member.name}
+              width={500}
+              height={500}
+              className="w-26 h-26 bg-cover mb-4 bg-transparent"
+              style={{ borderRadius: "10px" }}
+            />
+            <div className="text-center">
+              <h3 className="text-blue-500 font-semibold text-lg mb-1">
+                {member.name}
+              </h3>
+              {/* <p className="text-white">{member.designation}</p> */}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
   );
-}
+};
 
 export default Team;
