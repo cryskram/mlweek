@@ -12,6 +12,9 @@ const config: Config = {
         background: "#12111f",
         mBlue: "#8da3fc",
       },
+      dropShadow: {
+        down: "10px 10px 0 rgba(22, 72, 255, 0.8)",
+      },
     },
   },
   plugins: [],
