@@ -3,7 +3,7 @@
 import axios from "axios";
 import { Bruno_Ace } from "next/font/google";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
@@ -13,7 +13,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [modal, setModal] = useState(false);
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
       const response = await axios.post("/api/mail", {
@@ -86,7 +86,7 @@ const Contact = () => {
           <FaLinkedin size={28} />
         </Link>
       </div>
-      
+
       {modal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">

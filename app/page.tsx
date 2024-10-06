@@ -34,13 +34,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden flex items-center justify-center gradient-bg">
+    <div className="relative min-h-screen w-full overflow-hidden flex items-center justify-center gradient-bg px-4">
       <div className="relative z-10 w-full flex flex-col md:flex-row pointer-events-none justify-center items-center mt-10">
         <div className="bg-black/50 px-4 py-6 md:p-8 rounded-lg text-center w-full md:w-2/3 lg:w-[45%] flex flex-col items-center justify-center mt-20 mb-0">
           <h1 className="text-3xl md:text-4xl lg:text-6xl text-mBlue">
             Starts In
           </h1>
-          <div className="grid grid-cols-4 gap-2 md:gap-4 lg:gap-8 mt-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-8 mt-4">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div key={unit} className="flex flex-col items-center">
                 <span className="text-2xl md:text-3xl lg:text-5xl font-bold">
@@ -56,7 +56,7 @@ const Home = () => {
             href="/events"
             className="px-4 bg-mBlue/40 border-2 border-mBlue py-2 rounded-xl mt-5 hover:bg-mBlue/90 pointer-events-auto transition duration-200"
           >
-            Explore Events and Workshops
+            Explore more
           </Link>
         </div>
 
