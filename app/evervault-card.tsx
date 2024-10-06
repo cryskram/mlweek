@@ -79,13 +79,14 @@ export function CardPattern({
         className="absolute inset-0 opacity-0 mix-blend-overlay group-hover/card:opacity-100"
         style={style}
       >
-        <p className="absolute inset-0 text-xs break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-500">
+        <p className="relative w-full h-full text-xs break-words text-white font-mono font-bold transition duration-500">
           {randomString}
         </p>
       </motion.div>
     </div>
   );
 }
+
 
 const characters =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
