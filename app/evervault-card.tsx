@@ -18,7 +18,7 @@ export const EvervaultCard = ({
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    const str = generateRandomString(1500);
+    const str = generateRandomString(10000000000000);
     setRandomString(str);
   }, []);
 
@@ -86,7 +86,6 @@ export function CardPattern({
     </div>
   );
 }
-
 
 const characters =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
