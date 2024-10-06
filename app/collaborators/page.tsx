@@ -12,7 +12,7 @@ const Collaborators = () => {
         Collaborators & Sponsors
       </h1>
       <p className={`${font.className} text-xl sm:text-2xl mt-5 text-center`}>
-        In association with The Department of CSE, BMSCE
+        In association with <b>The Department of CSE, BMSCE</b>
       </p>
 
       <p className={`${font.className} text-xl sm:text-2xl mt-5 text-center`}>
