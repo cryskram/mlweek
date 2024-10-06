@@ -1,5 +1,5 @@
 "use client";
-import { useMotionValue, useMotionTemplate } from "framer-motion";
+import { useMotionValue, useMotionTemplate, MotionValue } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../lib/util";
@@ -22,14 +22,14 @@ export const EvervaultCard = ({
     setRandomString(str);
   }, []);
 
-  const onMouseMove = throttle(({ currentTarget, clientX, clientY }: any) => {
+  const onMouseMove = throttle(({ currentTarget, clientX, clientY }) => {
     const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
     const str = generateRandomString(5500);
     setRandomString(str);
-  }, 100); 
+  }, 100);
 
   return (
     <div
@@ -48,21 +48,31 @@ export const EvervaultCard = ({
           randomString={randomString}
         />
         <div className="relative z-10 flex items-center justify-center">
-          <span className="dark:text-white text-black z-20 text-4xl font-bold">{text}</span>
+          <span className="dark:text-white text-black z-20 text-4xl font-bold">
+            {text}
+          </span>
         </div>
       </div>
     </div>
   );
 };
 
-export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  const maskImage = useMotionTemplate`radial-gradient(200px at ${mouseX}px ${mouseY}px, white, transparent)`; 
+export function CardPattern({
+  mouseX,
+  mouseY,
+  randomString,
+}: {
+  mouseX: MotionValue<number>;
+  mouseY: MotionValue<number>;
+  randomString: string;
+}) {
+  const maskImage = useMotionTemplate`radial-gradient(200px at ${mouseX}px ${mouseY}px, white, transparent)`;
   const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
-    <div className="pointer-events-none w-full h-full"> 
+    <div className="pointer-events-none w-full h-full">
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0 group-hover/card:opacity-50 backdrop-blur-xl transition duration-500" 
+        className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0 group-hover/card:opacity-50 backdrop-blur-xl transition duration-500"
         style={style}
       />
       <motion.div

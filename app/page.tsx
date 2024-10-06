@@ -1,13 +1,12 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import CountdownTimer from './CountDown';
-import { EvervaultCard } from './evervault-card';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import { EvervaultCard } from "./evervault-card";
+import Image from "next/image";
 import poster from "../public/posters/landing_ml.png";
 
 const Home = () => {
-  const targetDate = new Date('2024-10-14T00:00:00');
+  const targetDate = new Date("2024-10-14T00:00:00");
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -41,9 +40,7 @@ const Home = () => {
       <EvervaultCard className="absolute inset-0" />
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen w-full text-white pointer-events-none p-4">
-
         <div className="w-full md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-1/2 lg:w-3/5 pointer-events-none mb-2 md:mb-0">
- 
           <div className="relative w-full aspect-[4/3] md:aspect-auto md:h-[50rem] lg:h-[50rem]">
             <Image
               src={poster}
@@ -55,7 +52,6 @@ const Home = () => {
           </div>
         </div>
 
-
         <div className="w-full md:w-1/2 lg:w-2/5 md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 flex flex-col items-center md:items-start justify-center">
           <div className="bg-black bg-opacity-50 p-4 md:p-8 rounded-lg text-center md:text-left w-full max-w-lg ml-0 md:ml-[3rem]">
             <h2 className="text-3xl md:text-4xl lg:text-6xl mb-4 md:mb-8 font-light text-blue-200 text-center">
@@ -66,7 +62,7 @@ const Home = () => {
               {Object.entries(timeLeft).map(([unit, value]) => (
                 <div key={unit} className="flex flex-col items-center">
                   <span className="text-2xl md:text-3xl lg:text-5xl font-bold">
-                    {value.toString().padStart(2, '0')}
+                    {value.toString().padStart(2, "0")}
                   </span>
                   <span className="text-xs md:text-sm lg:text-lg capitalize mt-1 md:mt-2">
                     {unit}
@@ -80,7 +76,6 @@ const Home = () => {
                 Explore Events and Workshops
               </button>
             </div>
-
           </div>
         </div>
       </div>

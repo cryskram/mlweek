@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface CountdownProps {
   targetDate: Date;
@@ -10,12 +10,17 @@ interface CountdownProps {
   }) => void;
 }
 
-const CountdownTimer: React.FC<CountdownProps> = ({ targetDate, onTimeUpdate }) => {
+const CountdownTimer: React.FC<CountdownProps> = ({
+  targetDate,
+  onTimeUpdate,
+}) => {
   const calculateTimeLeft = () => {
     const difference = targetDate.getTime() - new Date().getTime();
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      hours: Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      ),
       minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
       seconds: Math.floor((difference % (1000 * 60)) / 1000),
     };
@@ -31,7 +36,7 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate, onTimeUpdate }) 
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft, onTimeUpdate]);
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -43,9 +48,15 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate, onTimeUpdate }) 
       </div>
       <div className="flex space-x-4 font-['Bruno_Ace'] text-white">
         <p className="text-2xl sm:text-3xl">{remainingTime.days}</p>
-        <p className="text-2xl sm:text-3xl">{remainingTime.hours.toString().padStart(2, '0')}</p>
-        <p className="text-2xl sm:text-3xl">{remainingTime.minutes.toString().padStart(2, '0')}</p>
-        <p className="text-2xl sm:text-3xl">{remainingTime.seconds.toString().padStart(2, '0')}</p>
+        <p className="text-2xl sm:text-3xl">
+          {remainingTime.hours.toString().padStart(2, "0")}
+        </p>
+        <p className="text-2xl sm:text-3xl">
+          {remainingTime.minutes.toString().padStart(2, "0")}
+        </p>
+        <p className="text-2xl sm:text-3xl">
+          {remainingTime.seconds.toString().padStart(2, "0")}
+        </p>
       </div>
     </div>
   );
