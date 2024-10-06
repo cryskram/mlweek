@@ -1,7 +1,7 @@
+import Tracks from "@/components/tracks";
 import { Bruno_Ace } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import Tracks from "./tracks"
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
@@ -70,7 +70,7 @@ const Events = () => {
         >
           Tracks
         </h1>
-      <Tracks/>
+        <Tracks />
       </div>
 
       <div className="flex flex-col items-center justify-center mt-20">

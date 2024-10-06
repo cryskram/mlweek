@@ -14,7 +14,9 @@ const Navbar = () => {
 
   return (
     <div className="top-0 left-0 w-full z-50 fixed">
-      <div className="mx-auto flex flex-wrap justify-between items-center py-4 px-4 md:px-8 backdrop-blur-md bg-transparent bg-opacity-30"> {/* Made background transparent and added backdrop blur */}
+      <div className="mx-auto flex flex-wrap justify-between items-center py-4 px-4 md:px-8 backdrop-blur-md bg-transparent bg-opacity-30">
+        {" "}
+        {/* Made background transparent and added backdrop blur */}
         <div className="flex items-center">
           <Image
             src="/bmsce-ieee-cs.png"
@@ -24,7 +26,10 @@ const Navbar = () => {
           />
         </div>
         <div className="block md:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none text-2xl text-white">
+          <button
+            onClick={toggleMenu}
+            className="focus:outline-none text-2xl text-white"
+          >
             {menuOpen ? <IoCloseSharp /> : <GiHamburgerMenu />}
           </button>
         </div>
@@ -44,7 +49,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/events"
+                href="#events"
                 className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Events

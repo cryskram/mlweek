@@ -12,11 +12,11 @@ const Collaborators = () => {
         Collaborators & Sponsors
       </h1>
       <p className={`${font.className} text-xl sm:text-2xl mt-5 text-center`}>
-        In association with the department of CSE, BMSCE
+        In association with The Department of CSE, BMSCE
       </p>
 
       <p className={`${font.className} text-xl sm:text-2xl mt-5 text-center`}>
-        AND
+        and
       </p>
 
       <Image
