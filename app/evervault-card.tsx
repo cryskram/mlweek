@@ -18,7 +18,7 @@ export const EvervaultCard = ({
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    const str = generateRandomString(15000);
+    const str = generateRandomString(1500);
     setRandomString(str);
   }, []);
 
@@ -56,13 +56,13 @@ export const EvervaultCard = ({
 };
 
 export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  const maskImage = useMotionTemplate`radial-gradient(150px at ${mouseX}px ${mouseY}px, white, transparent)`; // Smaller hover circle for better performance
+  const maskImage = useMotionTemplate`radial-gradient(200px at ${mouseX}px ${mouseY}px, white, transparent)`; 
   const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
     <div className="pointer-events-none w-full h-full"> 
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0 group-hover/card:opacity-50 backdrop-blur-xl transition duration-500" // More brightness
+        className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0 group-hover/card:opacity-50 backdrop-blur-xl transition duration-500" 
         style={style}
       />
       <motion.div

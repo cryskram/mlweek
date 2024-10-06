@@ -32,20 +32,16 @@ const Events = () => {
               and fun. Get your ideas ready and dive into the world of AI at ML
               Matrix!
             </p>
-            <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between w-full mt-10">
+            <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-between w-full mt-10">
               <div className="text-center">
                 <p className="text-2xl">Prize Pool</p>
-                <h1
-                  className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl `}
-                >
+                <h1 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}>
                   ₹30,000
                 </h1>
               </div>
               <div className="text-center">
                 <p className="text-2xl">Team Size</p>
-                <h1
-                  className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl `}
-                >
+                <h1 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}>
                   2 - 4
                 </h1>
               </div>
@@ -95,20 +91,16 @@ const Events = () => {
               InnovateML is the perfect platform to collaborate, learn, and
               develop impactful machine learning solutions!
             </p>
-            <div className="flex flex-col md:flex-row items-center gap-5 md:gap-0 justify-between w-full mt-10">
+            <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-between w-full mt-10">
               <div className="text-center">
                 <p className="text-2xl">Prize Pool</p>
-                <h1
-                  className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl `}
-                >
+                <h1 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}>
                   ₹5,000
                 </h1>
               </div>
               <div className="text-center">
                 <p className="text-2xl">Team Size</p>
-                <h1
-                  className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl `}
-                >
+                <h1 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}>
                   1 - 2
                 </h1>
               </div>
