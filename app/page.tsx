@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { EvervaultCard } from "./evervault-card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,12 +35,11 @@ const Home = () => {
   }, [targetDate]);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
-      <EvervaultCard className="absolute inset-0" />
-      <div className="relative z-10 w-full flex flex-col md:flex-row pointer-events-none justify-center items-center">
-        <div className="bg-black/50 px-4 py-6 md:p-8 rounded-lg text-center w-1/3 flex flex-col items-center justify-center">
+    <div className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-gradient-to-t animate-gradient">
+      <div className="relative z-10 w-full flex flex-col md:flex-row pointer-events-none justify-center items-center mt-10"> 
+      <div className="bg-black/50 px-4 py-6 md:p-8 rounded-lg text-center w-full md:w-2/3 lg:w-[45%] flex flex-col items-center justify-center mt-20 mb-0">
           <h1 className="text-3xl md:text-4xl lg:text-6xl text-mBlue">
-            Starts in
+            Starts In
           </h1>
           <div className="grid grid-cols-4 gap-2 md:gap-4 lg:gap-8 mt-4">
             {Object.entries(timeLeft).map(([unit, value]) => (
@@ -68,9 +66,28 @@ const Home = () => {
           width={4000}
           height={4000}
           alt="landing image"
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 mt-2 md:mt-0" 
         />
       </div>
+      <style jsx>{`
+        @keyframes gradient-animation {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        .animate-gradient {
+         background: linear-gradient(270deg, #511651, #12111f, #511651);
+          background-size: 400% 400%;
+          animation: gradient-animation 7s ease infinite;
+        }
+      `}</style>
     </div>
   );
 };

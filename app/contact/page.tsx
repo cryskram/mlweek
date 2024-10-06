@@ -38,18 +38,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="my-10 flex flex-col items-center justify-center w-full">
+    <div className="my-10 flex flex-col items-center justify-center w-full mt-[7rem] sm:mt-[7rem] px-4 md:px-10">
       <h1
-        className={`${font.className} text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue`}
+        className={`${font.className} text-4xl sm:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue text-center`}
       >
         Get In Touch
       </h1>
       <form
-        className="flex flex-col gap-2 w-full max-w-screen-md mt-10"
+        className="flex flex-col gap-4 w-full max-w-screen-sm mt-8 md:mt-10"
         onSubmit={handleSubmit}
       >
         <input
-          className="text-xl rounded-xl px-6 py-4 outline-none bg-white/20"
+          className="text-lg sm:text-xl rounded-lg px-4 py-3 sm:px-6 sm:py-4 outline-none bg-white/20 placeholder-white/70"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
@@ -58,32 +58,38 @@ const Contact = () => {
           placeholder="Email ID"
         />
         <textarea
-          className="text-xl rounded-xl px-6 py-4 outline-none bg-white/20"
+          className="text-lg sm:text-xl rounded-lg px-4 py-3 sm:px-6 sm:py-4 outline-none bg-white/20 placeholder-white/70"
           name="message"
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           cols={30}
-          rows={10}
+          rows={6}
           placeholder="Message"
         ></textarea>
+        <button className="bg-mBlue border-2 border-mBlue hover:bg-transparent transition duration-200 text-lg sm:text-2xl px-3 sm:px-4 py-2 rounded mt-4 w-full">
+          Submit
+        </button>
       </form>
-      <button className="bg-mBlue border-2 border-mBlue hover:bg-transparent transition duration-200 text-2xl px-4 py-2 rounded mt-5">
-        Submit
-      </button>
 
-      <p className="text-xl mt-10">Or reach out to our Social Media</p>
-      <div className="mt-1 flex gap-4">
-        <Link href="https://www.instagram.com/bmsce_ieeecs/">
-          <FaInstagram size={30} />
+      <p className="text-lg sm:text-xl mt-8 md:mt-10 text-center">
+        Or reach out to our Social Media
+      </p>
+      <div className="mt-3 flex gap-6 justify-center">
+        <Link href="https://www.instagram.com/bmsce_ieeecs/" target="_blank">
+          <FaInstagram size={28} />
         </Link>
-        <Link href="https://www.linkedin.com/company/bmsce-ieee-computer-society">
-          <FaLinkedin size={30} />
+        <Link
+          href="https://www.linkedin.com/company/bmsce-ieee-computer-society"
+          target="_blank"
+        >
+          <FaLinkedin size={28} />
         </Link>
       </div>
+      
       {modal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
             <h2 className="text-xl font-bold text-center mb-4">Success!</h2>
             <p className="text-center">{message}</p>
             <button

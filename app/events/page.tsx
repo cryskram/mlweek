@@ -1,6 +1,7 @@
 import { Bruno_Ace } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Tracks from "./tracks"
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
@@ -56,19 +57,20 @@ const Events = () => {
           <div className="flex justify-center mt-10">
             <Link
               className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScNh4dxelD5YcZpP03x-oar2u-da1AoluJgV5nHF240zuSi0Q/viewform"
+              href="https://forms.gle/99q2sYRzEVqUxecV6"
             >
               Register Now
             </Link>
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="w-full mt-10">
         <h1
-          className={`${font.className} text-2xl md:text-4xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue`}
+          className={`${font.className} text-2xl md:text-4xl bg-gradient-to-r bg-clip-text text-transparent text-center from-fuchsia-400 to-mBlue`}
         >
           Tracks
         </h1>
+      <Tracks/>
       </div>
 
       <div className="flex flex-col items-center justify-center mt-20">
@@ -121,7 +123,7 @@ const Events = () => {
           <div className="flex justify-center mt-10">
             <Link
               className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-              href="https://forms.gle/Axv5eh9dByre6b4U9"
+              href="https://forms.gle/EtCLxVGdAd69Fen89"
             >
               Register Now
             </Link>
@@ -157,7 +159,7 @@ const Events = () => {
         <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-            href="https://forms.gle/Axv5eh9dByre6b4U9"
+            href="https://forms.gle/9XLwCKxiMjUCu2Ps9"
           >
             Register Now
           </Link>
@@ -195,7 +197,7 @@ const Events = () => {
         <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-            href="https://forms.gle/tHGcmLpfgAW14C5h7"
+            href="https://forms.gle/Wwb7zPex7sBYXYgF8"
           >
             Register Now
           </Link>
@@ -228,14 +230,14 @@ const Events = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
+        {/* <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
             href="https://forms.gle/Axv5eh9dByre6b4U9"
           >
             Register Now
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

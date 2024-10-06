@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="">
-      <div className="mx-auto flex flex-wrap justify-between items-center py-4 px-4 md:px-8">
+    <div className="top-0 left-0 w-full z-50 fixed">
+      <div className="mx-auto flex flex-wrap justify-between items-center py-4 px-4 md:px-8 backdrop-blur-md bg-transparent bg-opacity-30"> {/* Made background transparent and added backdrop blur */}
         <div className="flex items-center">
           <Image
             src="/bmsce-ieee-cs.png"
@@ -24,7 +24,7 @@ const Navbar = () => {
           />
         </div>
         <div className="block md:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none text-2xl">
+          <button onClick={toggleMenu} className="focus:outline-none text-2xl text-white">
             {menuOpen ? <IoCloseSharp /> : <GiHamburgerMenu />}
           </button>
         </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/"
-                className="text-mBlue hover:text-mBlue/60 hover:underline underline-offset-4 transition duration-200 px-4"
+                className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Home
               </a>
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/events"
-                className="text-mBlue hover:text-mBlue/60 hover:underline underline-offset-4 transition duration-200 px-4"
+                className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Events
               </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/collaborators"
-                className="text-mBlue hover:text-mBlue/60 hover:underline underline-offset-4 transition duration-200 px-4"
+                className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Collaborators and Sponsors
               </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/committee"
-                className="text-mBlue hover:text-mBlue/60 hover:underline underline-offset-4 transition duration-200 px-4"
+                className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Organising Committee
               </a>
@@ -69,7 +69,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/contact"
-                className="text-mBlue hover:text-mBlue/60 hover:underline underline-offset-4 transition duration-200 px-4"
+                className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Contact Us
               </a>
