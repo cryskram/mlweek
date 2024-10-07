@@ -15,7 +15,7 @@ const Events = () => {
       </h1> <br />
       <Link
         href="#preevents"
-        className="my-5 border-2 border-mBlue p-2 rounded-full hover:bg-mBlue/50 transition duration-300"
+        className="my-5 border-2 border-mBlue px-4 py-3 rounded-full hover:bg-mBlue/50 transition duration-300"
       >
         Check out the pre-events
       </Link>
