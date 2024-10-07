@@ -101,7 +101,7 @@ const Team = () => {
       </div>
       <br /> <br /> <br />
       <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
-        Student Activity Committee Coordinators
+        Student Activities Committee Coordinators
       </h2>{" "}
       <br /> <br /> <br />
       <div className="flex flex-wrap justify-center gap-6">
