@@ -5,142 +5,60 @@ import Link from "next/link";
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
-const Events = () => {
+const AboutUs = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center text-center px-0 md:px-40 my-10">
       <h1
-        className={`${font.className} text-4xl sm:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue text-center`}
+        className={`${font.className} text-4xl sm:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue text-center mt-20`}
       >
-        Events
-      </h1> <br />
-      <Link
-        href="#preevents"
-        className="my-5 border-2 border-mBlue p-2 rounded-full hover:bg-mBlue/50 transition duration-300"
-      >
-        Check out the pre-events
-      </Link>
+        Previous Events
+      </h1> <br /> <br />
       <div className="flex flex-col items-center justify-center">
         <h1
           className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
         >
-          ML Matrix
+          Cybersecurity Week
         </h1>
 
         <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-black via-black/20 to-black rounded-t-2xl w-full mt-10 p-10">
           <Image
             className="w-full md:w-1/3"
-            src="/posters/hackathon.png"
-            width={4000}
-            height={4000}
+            src="/prev_events/general.jpeg"
+            width={1000}
+            height={1000}
             alt="ml matrix"
           />
           <div className="md:pl-10 flex flex-col items-start justify-center mt-10 md:mt-0">
             <p className="text-justify">
-              Join us for ML Matrix, a 24-hour AI and machine learning hackathon
-              on October 19th and 20th, 2024! Take on challenges in Agritech,
-              Fintech, Healthcare, and more, while enjoying a dynamic mix of
-              coding, mini-games, and late-night snacks. This event is the
-              perfect opportunity to innovate and collaborate with fellow
-              enthusiasts. Get your ideas ready and immerse yourself in the
-              world of AI at ML Matrix!
+            Cybersecurity Week conducted by BMSCE IEEE Computer Society featured SecureHack, a 24-hour hackathon, and Securathon - an ideathon, highlighting cybersecurity significance. SecureHack had over 500 participants, and Securathon, had around 80+ participants. Both events tackled real-world cybersecurity challenges, with SecureHack offering a prize pool of ₹25,000 and Securathon ₹8,000. Participants showcased their skills in areas like cryptography, network security, and innovative solutions for emerging digital threats, making the event a major success in fostering cybersecurity innovation and collaboration.hallenges.
             </p>
           </div>
-        </div>
-        <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10">
-          <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
-            <div className="text-center">
-              <p className="text-2xl">Prize Pool</p>
-              <h1
-                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
-              >
-                ₹30,000
-              </h1>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl">Team Size</p>
-              <h1
-                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
-              >
-                2 - 4
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center mt-10">
-            <Link
-              className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-              href="https://forms.gle/99q2sYRzEVqUxecV6"
-              target="_blank"
-            >
-              Register Now
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="w-full mt-10">
-        <h1
-          className={`${font.className} text-2xl md:text-4xl bg-gradient-to-r bg-clip-text text-transparent text-center from-fuchsia-400 to-mBlue`}
-        >
-          Tracks
-        </h1>
-        <Tracks />
+        </div>  
       </div>
 
       <div className="flex flex-col items-center justify-center mt-20">
         <h1
           className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
         >
-          Innovate ML
+          Entrepreneurship Conclave
         </h1>
 
         <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-black via-black/20 to-black rounded-t-2xl w-full mt-10 p-10">
           <Image
             className="w-full md:w-1/3"
-            src="/posters/ideathon.png"
+            src="/prev_events/ec.jpg"
             width={4000}
             height={4000}
             alt="innovate ml"
           />
           <div className="md:pl-10 flex flex-col items-start justify-center mt-10 md:mt-0">
             <p className="text-justify">
-              InnovateML is a one-day ideathon happening on 14th October 2024,
-              focused on tackling real-world challenges in Healthcare, Finance,
-              and Sustainability. Participants will engage in brainstorming,
-              prototyping, and pitching innovative solutions with guidance from
-              experienced mentors. With a gamified approach that rewards early
-              milestone completion, along with expert keynote sessions,
-              InnovateML is the perfect platform to collaborate, learn, and
-              develop impactful machine learning solutions!
+            The Entrepreneurship Conclave organized by IEEE CS Bangalore and BMSCE IEEE CS brought together 120 participants for a day of inspiring talks, hands-on workshops, and networking opportunities. The event's highlight was the Startup Spotlight competition, which featured a prize pool of ₹30,000, attracting budding entrepreneurs to showcase their innovative ideas. Sessions provided valuable insights into ideation, pitching, and navigating the world of venture capital. Experts from the startup ecosystem shared their experiences, offering participants practical advice on building and scaling successful ventures in today’s competitive market.
             </p>
           </div>
         </div>
         <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10">
-          <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
-            <div className="text-center">
-              <p className="text-2xl">Prize Pool</p>
-              <h1
-                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
-              >
-                ₹5,000
-              </h1>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl">Team Size</p>
-              <h1
-                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
-              >
-                1 - 2
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center mt-10">
-            <Link
-              className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-              href="https://forms.gle/EtCLxVGdAd69Fen89"
-              target="_blank"
-            >
-              Register Now
-            </Link>
-          </div>
+        
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-20">
@@ -260,4 +178,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default AboutUs;

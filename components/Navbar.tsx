@@ -49,12 +49,20 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href="/aboutus"
+                className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
+              >
+                About Us
+              </a>
+            </li>
+            {/* <li>
+              <a
                 href="#events"
                 className="text-white hover:text-white/60 hover:underline underline-offset-4 transition duration-200 px-4"
               >
                 Events
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="/collaborators"
