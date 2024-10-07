@@ -71,7 +71,7 @@ const sac = [
 
 const Team = () => {
   return (
-    <div className="p-8 mt-20">
+    <div className="p-8 my-24 md:my-40">
       <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent text-center">
         Core Committee
       </h2>{" "}

@@ -13,7 +13,10 @@ const Events = () => {
       >
         Events
       </h1>
-      <Link href="#preevents" className="my-5">
+      <Link
+        href="#preevents"
+        className="my-5 border-2 border-mBlue p-2 rounded-full hover:bg-mBlue/50 transition duration-300"
+      >
         Check out the pre-events
       </Link>
       <div className="flex flex-col items-center justify-center">

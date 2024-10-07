@@ -35,10 +35,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden flex flex-col gradient-bg px-4">
-      <div className="w-full flex items-center justify-center ">
+    <div className="w-full flex flex-col gradient-bg px-4 items-center justify-center">
+      <div className="flex w-full min-h-screen items-center justify-center ">
         <div className="relative z-10 w-full flex flex-col md:flex-row pointer-events-none justify-center items-center mt-10">
-          <div className="bg-black/50 px-4 py-6 md:p-8 rounded-lg text-center w-full md:w-2/3 lg:w-[45%] flex flex-col items-center justify-center mt-20 mb-0">
+          <div className="bg-black/50 px-4 py-6 md:p-8 rounded-lg text-center w-full md:w-1/2 lg:w-1/3 flex flex-col items-center justify-center">
             <h1 className="text-3xl md:text-4xl lg:text-6xl text-mBlue">
               Starts In
             </h1>
@@ -63,11 +63,11 @@ const Home = () => {
           </div>
 
           <Image
-            src="/posters/landing_ml.png"
+            src="/landing.png"
             width={4000}
             height={4000}
             alt="landing image"
-            className="w-full md:w-1/2 mt-2 md:mt-0"
+            className="w-full md:w-1/3 mt-10 md:mt-0"
           />
         </div>
       </div>
