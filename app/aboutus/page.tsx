@@ -491,10 +491,10 @@ const AboutUs = () => {
                 <div className="flex justify-center mt-10">
                 <Link
                 className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-                href=""
+                href="https://forms.gle/BSugYsUusE19KmK56"
                 target="_blank"
                 >
-                Become an IEEE Computer Society Member now!
+                Become an IEEE Computer Society Member Now!
                 </Link>
           </div>
           <br /> <br />
