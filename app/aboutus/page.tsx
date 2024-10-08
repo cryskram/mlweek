@@ -24,7 +24,35 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-            </div> <br /> 
+            </div> <br /> <br /> <br />
+            <h2 className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}>
+            Chapter Advisor
+        </h2> <br /> <br />
+        <div className="flex flex-wrap justify-center">
+  <div className="flex flex-col items-center w-full sm:w-1/2 md:w-[40%] p-4 border rounded-lg shadow-md">
+    <a
+      href="https://bmsce.ac.in/home/facultyProfile/156/Dr-SANDEEP-VARMA-N"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src="/people/sv.jpg"
+        alt="Sandeep Varma"
+        width={700}
+        height={700}
+        className="w-26 h-26 bg-cover mb-4 bg-transparent"
+        style={{ borderRadius: "10px" }}
+      />
+    </a>
+    <div className="text-center">
+      <h3 className="text-blue-500 font-semibold text-lg mb-1">
+        Dr. Sandeep Varma N
+      </h3>
+    </div>
+  </div>
+      </div>
+        <br /> <br />
+             
             <div className="flex flex-col items-center justify-center">
                 <h1
                     className={`${font.className} text-5xl sm:text-6xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue text-center mt-20`}
