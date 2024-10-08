@@ -71,8 +71,18 @@ const Home = () => {
           />
         </div>
       </div>
+      <div className="flex justify-center mt-10">
+                <Link
+                className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
+                href=""
+                target="_blank"
+                >
+                Become an IEEE Computer Society Member now!
+                </Link>
+          </div> <br /> <br />  
       <section id="events">
         <Events />
+        
       </section>
     </div>
   );

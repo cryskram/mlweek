@@ -13,10 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="top-0 left-0 w-full z-50 fixed">
+    <div className="top-0 left-0 w-full z-50 md:fixed">
       <div className="mx-auto flex flex-wrap justify-between items-center py-4 px-4 md:px-8 backdrop-blur-md bg-transparent bg-opacity-30">
         {" "}
-        {/* Made background transparent and added backdrop blur */}
         <div className="flex items-center">
           <Image
             src="/bmsce-ieee-cs.png"
