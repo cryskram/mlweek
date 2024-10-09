@@ -64,6 +64,17 @@ const Events = () => {
                 2 - 4
               </h1>
             </div>
+          </div> <br /> <br />
+          <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
+          <div className="text-center">
+              <p className="text-2xl">Date and Time:</p>
+              <h1
+                className={`${font.className} text-fuchsia-400 text-2xl md:text-3xl`}
+              >
+                19th October, 2024 10 AM -<br />
+                20th October, 2024 12 Noon
+              </h1>
+            </div>
           </div>
           <div className="flex justify-center mt-10">
             <Link
@@ -130,6 +141,17 @@ const Events = () => {
               >
                 1 - 2
               </h1>
+            </div> 
+          </div> <br />  <br />
+          <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
+          <div className="text-center">
+              <p className="text-2xl">Date and Time:</p>
+              <h1
+                className={`${font.className} text-fuchsia-400 text-2xl md:text-3xl`}
+              >
+                14th October, 2024 <br />
+                11 AM - 5 PM
+              </h1>
             </div>
           </div>
           <div className="flex justify-center mt-10">
@@ -169,6 +191,19 @@ const Events = () => {
             </p>
           </div>
         </div>
+        <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
+            <div className="text-center">
+              <p className="text-2xl">Date and Time:</p>
+              <h1
+                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
+              >
+                16th October, 2024 <br />
+                10:30 AM - 5:00 PM
+              </h1>
+            </div>
+        </div>
+     </div>
         <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
@@ -180,7 +215,7 @@ const Events = () => {
         </div>
       </div>
       <section id="preevents">
-        <div className="flex flex-col items-center justify-center mt-20">
+        {/* <div className="flex flex-col items-center justify-center mt-20">
           <h1
             className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
           >
@@ -209,6 +244,7 @@ const Events = () => {
               </p>
             </div>
           </div>
+          
           <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
             <Link
               className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
@@ -218,7 +254,7 @@ const Events = () => {
               Register Now
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center justify-center mt-20">
           <h1
             className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}

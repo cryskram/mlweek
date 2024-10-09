@@ -75,7 +75,7 @@ const Home = () => {
                 <Link
                 className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
                 href="https://forms.gle/BSugYsUusE19KmK56"
-                target="_blank"
+                  target="_blank"
                 >
                 Become an IEEE Computer Society Member Now!
                 </Link>
