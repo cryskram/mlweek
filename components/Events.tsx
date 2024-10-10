@@ -12,13 +12,13 @@ const Events = () => {
         className={`${font.className} text-4xl sm:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue text-center`}
       >
         Events
-      </h1> <br />
-      <Link
+      </h1> <br /> <br />
+      {/* <Link
         href="#preevents"
         className="my-5 border-2 border-mBlue px-4 py-3 rounded-full hover:bg-mBlue/50 transition duration-300"
       >
         Check out the pre-events
-      </Link>
+      </Link> */}
       <div className="flex flex-col items-center justify-center">
         <h1
           className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
@@ -172,7 +172,7 @@ const Events = () => {
           ML Mastery
         </h1>
 
-        <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-black via-black/20 to-black rounded-2xl rounded-b-none md:rounded-b-2xl w-full mt-10 p-10">
+        <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-black via-black/20 to-black rounded-t-2xl md:rounded-t-2xl w-full mt-10 p-10">
           <Image
             className="w-full md:w-1/3"
             src="/posters/workshop.png"
@@ -191,7 +191,7 @@ const Events = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10">
+        <div className="bg-gradient-to-r from-black via-black/20 to-black w-full mt-0 p-10">
           <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
             <div className="text-center">
               <p className="text-2xl">Date and Time:</p>
@@ -214,8 +214,8 @@ const Events = () => {
           </Link>
         </div>
       </div>
-      <section id="preevents">
-        {/* <div className="flex flex-col items-center justify-center mt-20">
+      {/* <section id="preevents">
+        <div className="flex flex-col items-center justify-center mt-20">
           <h1
             className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
           >
@@ -254,7 +254,7 @@ const Events = () => {
               Register Now
             </Link>
           </div>
-        </div> */}
+        </div>
         <div className="flex flex-col items-center justify-center mt-20">
           <h1
             className={`${font.className} text-4xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
@@ -282,16 +282,16 @@ const Events = () => {
               </p>
             </div>
           </div>
-          {/* <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
+          <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
             href="https://forms.gle/Axv5eh9dByre6b4U9"
           >
             Register Now
           </Link>
-        </div> */}
         </div>
-      </section>
+        </div>
+      </section> */}
     </div>
   );
 };
