@@ -29,7 +29,7 @@ const AboutUs = () => {
             Chapter Advisor
         </h2> <br /> <br />
         <div className="flex flex-wrap justify-center">
-  <div className="flex flex-col items-center w-full sm:w-1/2 md:w-[40%] p-4 border rounded-lg shadow-md">
+  <div className="flex flex-col items-center w-full sm:w-[40%] md:w-[35%] p-4 border rounded-lg shadow-md">
     <a
       href="https://bmsce.ac.in/home/facultyProfile/156/Dr-SANDEEP-VARMA-N"
       target="_blank"

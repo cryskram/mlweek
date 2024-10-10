@@ -29,7 +29,7 @@ const Events = () => {
         <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-black via-black/20 to-black rounded-t-2xl w-full mt-10 p-10">
           <Image
             className="w-full md:w-1/3"
-            src="/posters/hackathon.png"
+            src="/posters/hackathon1.png"
             width={4000}
             height={4000}
             alt="ml matrix"
@@ -66,8 +66,31 @@ const Events = () => {
             </div>
           </div> <br /> <br />
           <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
-          <div className="text-center">
-              <p className="text-2xl">Date and Time:</p>
+            <div className="text-center">
+              <p className="text-2xl">Registration Fees</p> <br />
+              <h1 className={`${font.className} text-fuchsia-400 text-2xl md:text-3xl`}>
+                <span className="block">
+                  IEEE Members - &nbsp;
+                  <span className="relative">
+                    <del className="text-fuchsia-400 text-lg" style={{ textDecorationColor: 'white' }}>₹500</del>
+                  </span>
+                  <span className="text-blue-400"> ₹349</span>
+                </span>
+                <br /> 
+                <span className="block">
+                  Non-IEEE Members - &nbsp;
+                  <span className="relative">
+                    <del className="text-fuchsia-400 text-lg" style={{ textDecorationColor: 'white' }}>₹750</del>
+                  </span>
+                  <span className="text-blue-400"> ₹499</span>
+                </span>
+              </h1>
+            </div>
+          </div>
+          <br /> <br />
+          <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
+            <div className="text-center">
+              <p className="text-2xl">Date and Time</p>
               <h1
                 className={`${font.className} text-fuchsia-400 text-2xl md:text-3xl`}
               >
@@ -141,11 +164,11 @@ const Events = () => {
               >
                 1 - 2
               </h1>
-            </div> 
+            </div>
           </div> <br />  <br />
           <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
-          <div className="text-center">
-              <p className="text-2xl">Date and Time:</p>
+            <div className="text-center">
+              <p className="text-2xl">Date and Time</p>
               <h1
                 className={`${font.className} text-fuchsia-400 text-2xl md:text-3xl`}
               >
@@ -194,7 +217,7 @@ const Events = () => {
         <div className="bg-gradient-to-r from-black via-black/20 to-black w-full mt-0 p-10">
           <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
             <div className="text-center">
-              <p className="text-2xl">Date and Time:</p>
+              <p className="text-2xl">Date and Time</p>
               <h1
                 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
               >
@@ -202,8 +225,8 @@ const Events = () => {
                 10:30 AM - 5:00 PM
               </h1>
             </div>
+          </div>
         </div>
-     </div>
         <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
