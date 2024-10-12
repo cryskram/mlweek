@@ -130,7 +130,7 @@ const AboutUs = () => {
       <br /> <br /> <br />
       <div className="flex flex-col items-center justify-center">
         <h1
-          className={`${font.className} text-2xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
+          className={`${font.className} text-3xl md:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 font-bold to-mBlue`}
         >
           Entrepreneurship Conclave
         </h1>
