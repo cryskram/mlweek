@@ -6,7 +6,7 @@ import Link from "next/link";
 import Events from "@/components/Events";
 
 const Home = () => {
-  const targetDate = new Date("2024-10-14T00:00:00");
+  const targetDate = new Date("2024-10-16T00:00:00");
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -25,12 +25,9 @@ const Home = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    // Update timeLeft every second
     const intervalId = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-
-    // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
