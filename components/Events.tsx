@@ -29,7 +29,7 @@ const Events = () => {
         <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-black via-black/20 to-black rounded-t-2xl w-full mt-10 p-10">
           <Image
             className="w-full md:w-1/3"
-            src="/posters/hackathon1.png"
+            src="/posters/hackathon.png"
             width={4000}
             height={4000}
             alt="ml matrix"
@@ -68,22 +68,15 @@ const Events = () => {
           <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
             <div className="text-center">
               <p className="text-2xl">Registration Fees</p> <br />
-              <h1 className={`${font.className} text-fuchsia-400 text-2xl md:text-3xl`}>
-                <span className="block">
-                  IEEE Members - &nbsp;
-                  <span className="relative">
-                    <del className="text-fuchsia-400 text-lg" style={{ textDecorationColor: 'white' }}>₹500</del>
-                  </span>
-                  <span className="text-blue-400"> ₹349</span>
-                </span>
-                <br /> 
-                <span className="block">
-                  Non-IEEE Members - &nbsp;
-                  <span className="relative">
-                    <del className="text-fuchsia-400 text-lg" style={{ textDecorationColor: 'white' }}>₹750</del>
-                  </span>
-                  <span className="text-blue-400"> ₹499</span>
-                </span>
+              <h1
+                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
+              >
+                  IEEE Members - ₹500
+              </h1> <br />
+              <h1
+                className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
+              >
+                  Non-IEEE Members - ₹750
               </h1>
             </div>
           </div>
