@@ -618,7 +618,7 @@ const AboutUs = () => {
                 <h2
                   className={`${font.className} text-xl md:text-2xl text-center font-bold text-fuchsia-400 mt-6 transition group-hover:text-mBlue`}
                 >
-                  TImelapse Tapestery
+                  Timelapse Tapestery
                 </h2>
               </div>
               <div className="group flex flex-col items-center transform transition duration-300 hover:scale-110">
