@@ -1,7 +1,6 @@
 import Tracks from "@/components/tracks";
 import { Bruno_Ace } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
@@ -12,7 +11,8 @@ const Events = () => {
         className={`${font.className} text-4xl sm:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-fuchsia-400 to-mBlue text-center`}
       >
         Events
-      </h1> <br /> <br />
+      </h1>{" "}
+      <br /> <br />
       {/* <Link
         href="#preevents"
         className="my-5 border-2 border-mBlue px-4 py-3 rounded-full hover:bg-mBlue/50 transition duration-300"
@@ -64,19 +64,21 @@ const Events = () => {
                 2 - 4
               </h1>
             </div>
-          </div> <br /> <br />
+          </div>{" "}
+          <br /> <br />
           <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center justify-center w-full">
             <div className="text-center">
               <p className="text-2xl">Registration Fees</p> <br />
               <h1
                 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
               >
-                  IEEE Members - ₹500
-              </h1> <br />
+                IEEE Members - ₹500
+              </h1>{" "}
+              <br />
               <h1
                 className={`${font.className} text-fuchsia-400 text-3xl md:text-4xl`}
               >
-                  Non-IEEE Members - ₹750
+                Non-IEEE Members - ₹750
               </h1>
             </div>
           </div>
