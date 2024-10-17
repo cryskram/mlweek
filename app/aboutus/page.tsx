@@ -1,6 +1,5 @@
 import { Bruno_Ace } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
