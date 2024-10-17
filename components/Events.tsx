@@ -93,13 +93,14 @@ const Events = () => {
             </div>
           </div>
           <div className="flex justify-center mt-10">
-            <Link
+            {/* <Link
               className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
               href="https://forms.gle/99q2sYRzEVqUxecV6"
               target="_blank"
             >
               Register Now
-            </Link>
+            </Link> */}
+            <p className="text-2xl">Registrations are closed!</p>
           </div>
         </div>
       </div>
@@ -151,13 +152,14 @@ const Events = () => {
           </div>
         </div>
         <div className="bg-gradient-to-r from-black via-black/20 to-black rounded-b-2xl w-full mt-0 p-10 flex justify-center">
-          <Link
+          {/* <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
             href="https://forms.gle/9XLwCKxiMjUCu2Ps9"
             target="_blank"
           >
             Register Now
-          </Link>
+          </Link> */}
+          <p className="text-2xl">Registrations are closed!</p>
         </div>
       </div>
       {/* <section id="preevents">

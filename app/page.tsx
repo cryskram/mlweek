@@ -68,7 +68,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center mt-10">
+      {/* <div className="flex justify-center mt-10">
                 <Link
                 className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
                 href="https://forms.gle/BSugYsUusE19KmK56"
@@ -76,7 +76,7 @@ const Home = () => {
                 >
                 Become an IEEE Computer Society Member Now!
                 </Link>
-          </div> <br /> <br />  
+          </div> <br /> <br />   */}
       <section id="events">
         <Events />
         
