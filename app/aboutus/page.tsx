@@ -1,5 +1,6 @@
 import { Bruno_Ace } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const font = Bruno_Ace({ weight: "400", subsets: ["latin"] });
 
@@ -642,15 +643,15 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-10">
           <Link
             className="text-xl border-mBlue border-2 px-6 py-2 rounded hover:bg-mBlue transition duration-200 hover:text-black text-center"
-            href="https://forms.gle/BSugYsUusE19KmK56"
+            href="https://www.computer.org/membership/join"
             target="_blank"
           >
             Become an IEEE Computer Society Member Now!
           </Link>
-        </div> */}
+        </div>
         <br /> <br />
       </div>
     </div>
